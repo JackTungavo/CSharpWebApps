@@ -6,7 +6,7 @@ example solution video, and a challenge without a solution video for you to test
 your learning. [Read more about how to use Makers
 Bites.](https://github.com/makersacademy/course/blob/main/labels/bites.md)_
 
-/** Fill this out **/
+<!-- OMITTED -->
 
 Learn to edit existing templates in an ASP.NET project.
 
@@ -97,13 +97,7 @@ In a database-backed ASP.NET application, you would probably be iterating throug
 
 ## Demonstration
 
-/**
-
-  Add a video demonstration covering the same material as the intro, as close as
-  you can get it. Assume some learners will engage only with the intro text or
-  the demo video.
-
-**/
+<!-- OMITTED -->
 
 [Demonstration Video]()
 
