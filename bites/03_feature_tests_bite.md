@@ -44,7 +44,6 @@ Now, you're almost there. Let's just add in a simple test for you to run and ver
 namespace MakersBnB.Tests;
 
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using Microsoft.Playwright;
 using Microsoft.Playwright.NUnit;
 using NUnit.Framework;
@@ -53,13 +52,13 @@ public class Tests : PageTest
 {
     // the following method is a test
     [Test]
-    public async Task IndexpageHasPlaywrightInTitleAndGetStartedLinkLinkingtoTheIntroPage()
+    public void IndexpageHasPlaywrightInTitleAndGetStartedLinkLinkingtoTheIntroPage()
     {
         // go to the MakersBnB Index page
-        await Page.GotoAsync("http://localhost:5106");
+        Page.GotoAsync("http://localhost:5106");
 
         // expect the page title to contain "Index Page - MakersBnB"
-        await Expect(Page).ToHaveTitleAsync(new Regex("Index Page - MakersBnB"));
+        Expect(Page).ToHaveTitleAsync(new Regex("Index Page - MakersBnB"));
     }
 }
 ```
@@ -77,10 +76,10 @@ Add this to your existing test file.
 
 ```cs
 [Test]
- public async Task HomePageIncludesWelcomeMessage() {
-     await Page.GotoAsync("http://localhost:5106");
+ public void HomePageIncludesWelcomeMessage() {
+     Page.GotoAsync("http://localhost:5106");
 
-     await Expect(Page.GetByText("Welcome to MakersBnB!")).ToBeVisibleAsync();
+     Expect(Page.GetByText("Welcome to MakersBnB!")).ToBeVisibleAsync();
  }
 ```
 
